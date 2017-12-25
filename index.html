@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="remark,remarkjs,markdown,slideshow,presentation" />
+    <meta name="description" content="A simple, in-browser, markdown-driven slideshow tool." />
+    <title>Remark</title>
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif);
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+      @import url(https://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+      body {
+        font-family: 'Droid Serif','Noto Sans JP';
+      }
+      h1,h2, h3 {
+        font-family: 'Yanone Kaffeesatz','Noto Sans JP';
+        font-weight: 400;
+        margin-bottom: 0;
+      }
+      .remark-slide-content h1 { font-size: 3em; }
+      .remark-slide-content h2 { font-size: 2em; }
+      .remark-slide-content h3 { font-size: 1.6em; }
+      .footnote {
+        position: absolute;
+        bottom: 3em;
+      }
+      li p { line-height: 1.25em; }
+      .red { color: #fa0000; }
+      .large { font-size: 2em; }
+      a, a > code {
+        color: rgb(249, 38, 114);
+        text-decoration: none;
+      }
+      code {
+        background: #e7e8e2;
+        border-radius: 5px;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono','Noto Sans JP'; }
+      .remark-code-line-highlighted     { background-color: #373832; }
+      .pull-left {
+        float: left;
+        width: 47%;
+      }
+      .pull-right {
+        float: right;
+        width: 47%;
+      }
+      .pull-right ~ p {
+        clear: both;
+      }
+      #slideshow .slide .content code {
+        font-size: 0.8em;
+      }
+      #slideshow .slide .content pre code {
+        font-size: 0.9em;
+        padding: 15px;
+      }
+      .inverse {
+        background: #272822;
+        color: #777872;
+        text-shadow: 0 0 20px #333;
+      }
+      .inverse h1, .inverse h2 {
+        color: #f3f3f3;
+        line-height: 0.8em;
+      }
+
+      /* Slide-specific styling */
+      #slide-inverse .footnote {
+        bottom: 12px;
+        left: 20px;
+      }
+      #slide-how .slides {
+        font-size: 0.9em;
+        position: absolute;
+        top:  151px;
+        right: 140px;
+      }
+      #slide-how .slides h3 {
+        margin-top: 0.2em;
+      }
+      #slide-how .slides .first, #slide-how .slides .second {
+        padding: 1px 20px;
+        height: 90px;
+        width: 120px;
+        -moz-box-shadow: 0 0 10px #777;
+        -webkit-box-shadow: 0 0 10px #777;
+        box-shadow: 0 0 10px #777;
+      }
+      #slide-how .slides .first {
+        background: #fff;
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        z-index: 1;
+      }
+      #slide-how .slides .second {
+        position: relative;
+        background: #fff;
+        z-index: 0;
+      }
+
+      /* Two-column layout */
+      .left-column {
+        color: #777;
+        width: 20%;
+        height: 92%;
+        float: left;
+      }
+        .left-column h2:last-of-type, .left-column h3:last-child {
+          color: #000;
+        }
+      .right-column {
+        width: 75%;
+        float: right;
+        padding-top: 1em;
+      }
+      .date{
+      float: right;
+      }
+    </style>
+	<style>
+	pre {
+			font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+			font-size: 16px;
+			line-height: 1.0;
+	}
+	li.L0, li.L1, li.L2, li.L3, li.L4, li.L5, li.L6, li.L7, li.L8, li.L9 {
+		list-style-position: outside;
+		list-style-type: decimal !important;
+	}
+	.sourcecode {
+		overflow:auto;
+	}
+	</style>
+  </head>
+  <body>
+    <textarea id="source">
+name: inverse
+layout: true
+class: center, middle, inverse
+---
+##処理時間短縮手法
+工学部機械知能工学科機械コース4年  
+スペースダイナミクス研究室  
+13104069 坂本悠作(Sakamoto Yusaku)
+.right-column[
+.footnote[2017年12月25日(金) 14:30~]
+]
+
+---
+layout: false
+###Contents
+- キャッシュ
+- 現状以上の高速化の見込み
+- 現状の処理時間
+- 現状の処理時間における限界粒子数
+---
+template: inverse
+
+##キャッシュ(cache)
+
+---
+layout:false
+.left-column[
+ ###キャッシュ(cache)
+ ### -Cacheとは?
+]
+.right-column[
+cacheはデータを一時的に保存するデータ領域で，保存できる容量は小さいが高速でアクセスすることが可能であり，計算を高速で処理する為に利用される．膨大な計算量を必要とするプログラムではキャッシュへの十分な配慮が必要である．
+![](./picture/access.svg)
+]
+---
+layout:false
+.left-column[
+ ###キャッシュ(cache)
+ ### -Cacheとは?
+]
+.right-column[
+###cacheによる時間短縮の見込み
+テストプログラムの作成  
+c++/cacheを有効活用するプログラム
+<div class="tabcontent" id="tabcontent3">
+<p class="sourcecode"><pre class="prettyprint linenums lang-cpp" style="border-color:white; overflow:scroll;">
+#include &lt; iostream &gt;
+#include &lt; ctime &gt;
+
+using namespace std;
+
+int arr[1000][1000][1000];
+int main(int argc, const char * argv[]){
+	clock_t startTime, endTime;
+	startTime = clock();
+
+	for (int i = 0; i  &lt; 1000; i++) {
+		for (int j = 0; j  &lt; 1000; j++) {
+			for (int k = 0; k  &lt; 1000; k++) {
+				arr[i][j][k] = i * j * k;
+			}
+		}
+	}
+
+	endTime = clock();
+	cout  &lt;&lt; (double)(endTime - startTime) / CLOCKS_PER_SEC  &lt;&lt; endl;
+}
+</pre></p>
+</div>
+]
+---
+layout:false
+.left-column[
+ ###キャッシュ(cache)
+ ### -Cacheとは?
+]
+.right-column[
+###cacheによる時間短縮の見込み
+テストプログラムの作成  
+c++/cacheを無駄にするプログラム
+<div class="tabcontent" id="tabcontent3">
+<p class="sourcecode"><pre class="prettyprint linenums lang-cpp" style="border-color:white; overflow:scroll;">
+#include &lt; iostream &gt;
+#include &lt; ctime &gt;
+
+using namespace std;
+
+int arr[1000][1000][1000];
+int main(int argc, const char * argv[]){
+	clock_t startTime, endTime;
+	startTime = clock();
+
+	for (int i = 0; i  &lt; 1000; i++) {
+		for (int j = 0; j  &lt; 1000; j++) {
+			for (int k = 0; k  &lt; 1000; k++) {
+				arr[k][j][i] = i * j * k;
+			}
+		}
+	}
+
+	endTime = clock();
+	cout  &lt;&lt; (double)(endTime - startTime) / CLOCKS_PER_SEC  &lt;&lt; endl;
+}
+</pre></p>
+</div>
+]
+---
+layout:false
+.left-column[
+ ###キャッシュ(cache)
+ ### -Cacheとは?
+]
+.right-column[
+###cacheによる時間短縮の見込み
+テストプログラムの作成  
+結果
+<div class="tabcontent" id="tabcontent3">
+<p class="sourcecode"><pre class="prettyprint" style="border-color:white">
+- fast
+11,517,845,487      cycles
+20,503,434,221      instructions          #    1.78  insn per cycle
+     6,474,775      cache-references 
+     4,785,982      cache-misses          #   73.917 % of all cache refs
+
+2.901928359 seconds time elapsed
+
+- slow
+91,093,623,888      cycles
+20,757,840,641      instructions          #    0.23  insn per cycle
+ 1,285,474,841      cache-references
+ 1,148,853,882      cache-misses          #   89.372 % of all cache refs
+
+23.261073111 seconds time elapsed
+</pre></p>
+</div>
+
+cacheを意識する/しないで演算時間に大きな差が生じた.
+]
+---
+layout:false
+.left-column[
+ ###キャッシュ(cache)
+ ### -Cacheとは?
+]
+.right-column[
+###なぜ違いが現れるのか
+![](./picture/ram1.svg)
+]
+---
+layout:false
+.left-column[
+ ###キャッシュ(cache)
+ ### -Cacheとは?
+]
+.right-column[
+###なぜ違いが現れるのか（連続にアクセスする場合）
+![](./picture/ram2.svg)
+]
+---
+layout:false
+.left-column[
+ ###キャッシュ(cache)
+ ### -Cacheとは?
+]
+.right-column[
+###なぜ違いが現れるのか（ジャンプする場合）
+![](./picture/ram3.svg)
+]
+---
+layout:false
+.left-column[
+ ###キャッシュ(cache)
+ ### -Cacheとは?
+]
+.right-column[
+###結論
+プログラムコード量・確保メモリ量が最小となるように設計するべきである．
+]
+---
+template: inverse
+
+##現状以上の高速化の見込み
+
+---
+layout:false
+.left-column[
+ ###現状以上の高速化の見込み
+ ### -software
+]
+.right-column[
+###ソフトウェア的な改善
+- Fortranを使用する  
+先ほどのテストプログラムで演算時間を比較する  
+
+c++:2.614[s]
+
+<div class="tabcontent" id="tabcontent3">
+<p class="sourcecode"><pre class="prettyprint linenums lang-cpp" style="border-color:white; overflow:scroll;">
+	startTime = clock();
+	for (int i = 0; i  &lt; 1000; i++) {
+		for (int j = 0; j  &lt; 1000; j++) {
+			for (int k = 0; k  &lt; 1000; k++) {
+				arr[i][j][k] = i * j * k;
+			}
+		}
+	}
+	endTime = clock();
+</pre></p>
+</div>
+]
+---
+layout:false
+.left-column[
+ ###現状以上の高速化の見込み
+ ### -software
+]
+.right-column[
+###ソフトウェア的な改善
+- Fortranを使用する  
+先ほどのテストプログラムで演算時間を比較する  
+
+Fortran:2.697[s]
+
+<div class="tabcontent" id="tabcontent3">
+<p class="sourcecode"><pre class="prettyprint linenums lang-cpp" style="border-color:white; overflow:scroll;">
+	call system_clock(t1)
+	do i=1, 1000
+		do j=1,1000
+			do k=1,1000
+				arr(k,j,i) = i*j*k
+			end do
+		end do
+	end do
+	call system_clock(t2, t_rate, t_max)
+</pre></p>
+</div>
+]
+---
+layout:false
+.left-column[
+ ###現状以上の高速化の見込み
+ ### -software
+]
+.right-column[
+###ソフトウェア的な改善
+- Fortranを使用する  
+先ほどのテストプログラムで演算時間を比較する  
+
+
+CSharp:9.287[s]  
+c++:2.614[s]  
+Fortran:2.697[s]  
+
+あまり期待できないが,うまくコーディングできるなら・・・
+]
+---
+layout:false
+.left-column[
+ ###現状以上の高速化の見込み
+ ### -software
+ ### -hardware
+]
+.right-column[
+###Hardware的スペックアップ
+現在のスペック
+
+|Hardware  |spec                                   |
+|----------|---------------------------------------|
+|CPU       |Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz|
+|core      |4 core 8thread                         |
+|cache     |L1d キャッシュ : 32K                   |
+|          |L1i キャッシュ : 32K                   |
+|          |L2  キャッシュ : 256K                  |
+|          |L3  キャッシュ : 8192K                 |
+|Base Board|Version:SDK0E50512 STD(LENOVO)         |
+|Memory    |8GB                                    |
+]
+---
+layout:false
+.left-column[
+ ###現状以上の高速化の見込み
+ ### -software
+ ### -hardware
+]
+.right-column[
+###Hardware的スペックアップ
+最新intel core i9-7980XEのスペック
+
+|Hardware  |spec                                   |
+|----------|---------------------------------------|
+|CPU       |3.40GHz|
+|core      |18 core 36thread                         |
+|cache     |L3  キャッシュ : 24750K                 |
+上の情報のみを考慮して単純計算した場合
+
+$$
+\frac{3.4}{3.6} \times \frac{18}{4} = 3.7778
+$$
+となり，約1/4に短縮できる(見込みがある)
+]
+---
+layout:false
+.left-column[
+ ###現状以上の高速化の見込み
+ ### -software
+ ### -hardware
+]
+.right-column[
+###Hardware的スペックアップ
+スパコンを借りる場合  
+「Focusスパコンシステム」の「Fシステム」
+
+|Hardware  |spec                                   |
+|----------|---------------------------------------|
+|CPU       |2.20GHz (Xeon E5-2698v4)               |
+|core      |40                                     |
+|cache     |-                                      |
+$$
+\frac{2.2}{3.6} \times \frac{40}{4} = 6.1111
+$$
+となり，約1/6に短縮できる(見込みがある)
+]
+---
+layout:false
+.left-column[
+ ###現状以上の高速化の見込み
+ ### -software
+ ### -hardware
+]
+.right-column[
+###Hardware的スペックアップ
+スパコンを作る場合  
+ubuntuでは，PCを複数台使用してネットワーク通信により並列処理を行う  
+「クラスタ」を簡単に作成できるソフトウェアが用意されている（敷居は低い）
+
+通信にかかるコスト以上の性能を出せるかは繋げるPCのスペック・数による．
+]
+---
+layout:false
+.left-column[
+ ###現状以上の高速化の見込み
+ ### -software
+ ### -hardware
+]
+.right-column[
+###結論
+- これ以上のソフトウェア的高速化は，現状難しい．
+- ハードウェア的な改善したとしても，良くて1/10．
+]
+---
+template: inverse
+
+##現状の処理時間
+
+---
+layout:false
+.left-column[
+ ###現状の処理時間
+ ### 処理時間
+]
+.right-column[
+###処理時間
+![](./graph/graph2_1.svg)
+]
+---
+layout:false
+.left-column[
+ ###現状の処理時間
+ ### 処理時間
+]
+.right-column[
+###処理時間
+![](./graph/graph2_2.svg)
+]
+---
+layout:false
+.left-column[
+ ###現状の処理時間
+ ### 処理時間
+]
+.right-column[
+###処理時間÷粒子数
+![](./graph/graph3_1.svg)
+]
+---
+layout:false
+.left-column[
+ ###現状の処理時間
+ ### 処理時間
+]
+.right-column[
+###処理時間÷粒子数
+![](./graph/graph3_2.svg)
+]
+---
+layout:false
+.left-column[
+ ###現状の処理時間
+ ### 処理時間
+ ### データ量概算
+]
+.right-column[
+###データ量概算
+粒子数127あたりで1粒子数当たりの演算時間が増大した．確保メモリ量の概算をすると
+$$
+(double型) \times (パラメータ数) \times (粒子数)
+$$
+$$
+8 \times 49 \times 127^2 = 6323[Kbyte] &lt; Lv3cache(8192Kbyte)
+$$
+実際にはOSとデーモン・他のプログラムが起動しており，それぞれがcacheを確保しているので，Lv3cacheよりも小さい値でRAMアクセスコストの影響を受け始めると考えられる.
+]
+---
+template: inverse
+
+##現状の処理時間
+
+---
+layout:false
+.left-column[
+ ###現状の処理時間
+ ### 処理時間
+]
+.right-column[
+###dt=1E-6,tmax=0.1の演算時間
+![](./graph/graph2_1.svg)
+]
+---
+layout:false
+.left-column[
+ ###現状の処理時間
+ ### 処理時間
+ ### 粒子数の設定
+]
+.right-column[
+###粒子数の設定
+**丸い穴を開ける**ことを考慮すれば，可能な限り粒子数を大きく取りたい．
+- 500✕500,dt=1E-6,tmax=10.0  
+==>演算時間6日
+- 100✕100,dt=1E-6,tmax=10.0  
+==>演算時間1.5時間
+
+100から500の値で妥協する
+]
+---
+layout:false
+.left-column[
+ ###現状の処理時間
+ ### 処理時間
+ ### 粒子数の設定
+ ### 工夫
+]
+.right-column[
+###工夫
+上下・左右対称であることを考慮すれば，事実上4倍の粒子数を取れる．
+![](./picture/kuhu.svg)
+]
+---
+    </textarea>
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=sons-of-obsidian"></script>
+	<script type="text/javascript" src="../../../js/lang-css.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
+    <script src="downloads/remark-latest.min.js"></script>
+    <script>
+      var hljs = remark.highlighter.engine;
+    </script>
+    <script src="remark.language.js"></script>
+    <script>
+      var slideshow = remark.create({
+          highlightStyle: 'monokai',
+          highlightLanguage: 'remark',
+          highlightLines: true
+        }) ;
+    </script>
+    <script>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-44561333-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script');
+        ga.src = 'https://ssl.google-analytics.com/ga.js';
+        var s = document.scripts[0];
+        s.parentNode.insertBefore(ga, s);
+      }());
+       var slideshow = remark.create({
+        ratio: '16:9'
+      });
+
+      // Setup MathJax
+      MathJax.Hub.Config({
+          tex2jax: {
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+          }
+      });
+      MathJax.Hub.Queue(function() {
+      $(MathJax.Hub.getAllJax()).map(function(index, elem) {
+      return(elem.SourceElement());
+      }).parent().addClass('has-jax');
+      });
+      MathJax.Hub.Configured();
+    </script>
+  </body>
+</html>
+

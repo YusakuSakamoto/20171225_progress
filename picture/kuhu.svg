@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 744.09448819 1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="kuhu.svg">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible;"
+       id="marker4853"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend">
+      <path
+         transform="scale(0.8) rotate(180) translate(12.5,0)"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path4855" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lend"
+       style="overflow:visible;"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         id="path4240"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend-4"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4240-3"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend-8"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4240-33"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.959798"
+     inkscape:cx="243.66518"
+     inkscape:cy="886.61197"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     showguides="false"
+     inkscape:window-width="1855"
+     inkscape:window-height="1056"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid4136" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="レイヤー 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.56817412px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 490.02272,111.76666 139.97146,0 0,94.96354 -85.18734,0.21154"
+       id="path4138"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="opacity:0.66799999;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path4140"
+       sodipodi:type="arc"
+       sodipodi:cx="-207.29605"
+       sodipodi:cy="489.55212"
+       sodipodi:rx="55.019558"
+       sodipodi:ry="55.30555"
+       sodipodi:start="0.00074814637"
+       sodipodi:end="1.5922677"
+       d="m -152.27651,489.5935 a 55.019558,55.30555 0 0 1 -16.54945,39.4976 55.019558,55.30555 0 0 1 -39.65135,15.75383"
+       transform="matrix(-0.00221032,-0.99999756,0.99999756,-0.00221032,0,0)"
+       sodipodi:open="true" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.70461893px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 489.97531,112.11236 0.12636,39.62738"
+       id="path4142"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.44749737px;line-height:125%;font-family:'TeX Gyre Termes Math';-inkscape-font-specification:'TeX Gyre Termes Math';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="143.34767"
+       y="-639.34589"
+       id="text4144"
+       sodipodi:linespacing="125%"
+       transform="matrix(-0.02002502,0.99979948,-0.99979948,-0.02002502,0,0)"
+       inkscape:transform-center-x="-4.0838516"
+       inkscape:transform-center-y="2.6465144"><tspan
+         sodipodi:role="line"
+         id="tspan4146"
+         x="143.34767"
+         y="-639.34589">350</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.44749737px;line-height:125%;font-family:'TeX Gyre Termes Math';-inkscape-font-specification:'TeX Gyre Termes Math';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="113.90678"
+       y="-495.90717"
+       id="text4144-9"
+       sodipodi:linespacing="125%"
+       transform="matrix(-0.02002502,0.99979948,-0.99979948,-0.02002502,0,0)"
+       inkscape:transform-center-x="-4.0838516"
+       inkscape:transform-center-y="2.6465144"><tspan
+         sodipodi:role="line"
+         id="tspan4146-3"
+         x="113.90678"
+         y="-495.90717">140</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.4, 0.8;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 630.05512,111.59955 c 7.28162,46.22989 4.72202,72.77737 0,94.99999"
+       id="path4166"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.16681612;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.16681613, 0.33363225;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 490.33349,112.0304 c 3.03673,19.27973 1.96927,30.35109 0,39.61883"
+       id="path4166-5"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.35836166;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.35836166, 0.71672331;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 489.84705,111.54341 c 68.32294,-14.738789 107.53017,-9.31756 140.33974,0.53345"
+       id="path4166-0"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.44749737px;line-height:125%;font-family:'TeX Gyre Termes Math';-inkscape-font-specification:'TeX Gyre Termes Math';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="558.51617"
+       y="106.35342"
+       id="text4144-2"
+       sodipodi:linespacing="125%"
+       transform="matrix(0.99994475,-0.01051144,0.01051144,0.99994475,0,0)"
+       inkscape:transform-center-x="-2.5214837"
+       inkscape:transform-center-y="-4.164021"><tspan
+         sodipodi:role="line"
+         id="tspan4146-9"
+         x="558.51617"
+         y="106.35342">500</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="m 489.97536,206.86477 39,-39"
+       id="path4231"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.44749737px;line-height:125%;font-family:'TeX Gyre Termes Math';-inkscape-font-specification:'TeX Gyre Termes Math';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="253.81357"
+       y="480.5274"
+       id="text4144-2-4"
+       sodipodi:linespacing="125%"
+       transform="matrix(0.73602422,-0.6769552,0.6769552,0.73602422,0,0)"
+       inkscape:transform-center-x="0.94726664"
+       inkscape:transform-center-y="-4.7781939"><tspan
+         sodipodi:role="line"
+         id="tspan4146-9-3"
+         x="253.81357"
+         y="480.5274">210</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.39262494;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.39262495, 0.78524991;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 545.83402,206.4071 c 41.34242,-10.5923 65.06683,-6.69624 84.92001,0.38338"
+       id="path4166-0-5"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.44749737px;line-height:125%;font-family:'TeX Gyre Termes Math';-inkscape-font-specification:'TeX Gyre Termes Math';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="579.71674"
+       y="209.46861"
+       id="text4144-2-1"
+       sodipodi:linespacing="125%"
+       transform="matrix(0.99980546,-0.01972412,0.01972412,0.99980546,0,0)"
+       inkscape:transform-center-x="-2.4825383"
+       inkscape:transform-center-y="-4.1819378"><tspan
+         sodipodi:role="line"
+         id="tspan4146-9-7"
+         x="579.71674"
+         y="209.46861">290</tspan></text>
+    <rect
+       style="opacity:0.66799999;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.51305777;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4723"
+       width="279.98895"
+       height="188.02466"
+       x="60.249329"
+       y="72.544235" />
+    <path
+       style="opacity:0.66799999;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.44460905;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path4755"
+       sodipodi:type="arc"
+       sodipodi:cx="198.97383"
+       sodipodi:cy="167.28719"
+       sodipodi:rx="56.001995"
+       sodipodi:ry="54.999119"
+       sodipodi:start="0.00074814586"
+       sodipodi:end="6.274088"
+       sodipodi:open="true"
+       d="m 254.97581,167.32833 a 56.001995,54.999119 0 0 1 -55.90604,54.95789 56.001995,54.999119 0 0 1 -56.09745,-54.76944 56.001995,54.999119 0 0 1 55.62989,-55.2275 56.001995,54.999119 0 0 1 56.3713,54.49757" />
+    <path
+       style="opacity:0.66799999;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path4140-8"
+       sodipodi:type="arc"
+       sodipodi:cx="-167.23946"
+       sodipodi:cy="199.63994"
+       sodipodi:rx="55.019558"
+       sodipodi:ry="55.30555"
+       sodipodi:start="0.00074814637"
+       sodipodi:end="1.5922677"
+       d="m -112.21991,199.68131 a 55.019558,55.30555 0 0 1 -16.54946,39.4976 55.019558,55.30555 0 0 1 -39.65134,15.75383"
+       transform="matrix(-0.00221032,-0.99999756,0.99999756,-0.00221032,0,0)"
+       sodipodi:open="true" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.70461893;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:0.70461893,1.40923786;stroke-dashoffset:0"
+       d="m 199.97532,72.69667 0.12636,39.62738"
+       id="path4142-0"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.44749737px;line-height:125%;font-family:'TeX Gyre Termes Math';-inkscape-font-specification:'TeX Gyre Termes Math';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="151.96353"
+       y="-354.5195"
+       id="text4144-4"
+       sodipodi:linespacing="125%"
+       transform="matrix(-0.02002502,0.99979948,-0.99979948,-0.02002502,0,0)"
+       inkscape:transform-center-x="-4.0838516"
+       inkscape:transform-center-y="2.6465144"><tspan
+         sodipodi:role="line"
+         id="tspan4146-7"
+         x="151.96353"
+         y="-354.5195">700</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.44749737px;line-height:125%;font-family:'TeX Gyre Termes Math';-inkscape-font-specification:'TeX Gyre Termes Math';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="80.306252"
+       y="-205.17604"
+       id="text4144-9-6"
+       sodipodi:linespacing="125%"
+       transform="matrix(-0.02002502,0.99979948,-0.99979948,-0.02002502,0,0)"
+       inkscape:transform-center-x="-4.0838516"
+       inkscape:transform-center-y="2.6465144"><tspan
+         sodipodi:role="line"
+         id="tspan4146-3-8"
+         x="80.306252"
+         y="-205.17604">140</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.79312712;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.79312711, 1.58625421;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 340.2493,72.214443 c 14.43812,91.665447 9.36291,144.304277 0,188.367667"
+       id="path4166-9"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.16681612;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.16681613, 0.33363225;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 200.3335,72.61471 c 3.03673,19.27973 1.96927,30.35109 0,39.61883"
+       id="path4166-5-0"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.71248883;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.71248883, 1.42497764;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 61.114692,71.430988 C 196.95325,42.127566 274.90443,52.905968 340.13588,72.491585"
+       id="path4166-0-6"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.44749737px;line-height:125%;font-family:'TeX Gyre Termes Math';-inkscape-font-specification:'TeX Gyre Termes Math';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="191.76346"
+       y="54.896187"
+       id="text4144-2-8"
+       sodipodi:linespacing="125%"
+       transform="matrix(0.99980546,-0.01972412,0.01972412,0.99980546,0,0)"
+       inkscape:transform-center-x="-2.4825383"
+       inkscape:transform-center-y="-4.1819378"><tspan
+         sodipodi:role="line"
+         id="tspan4146-9-79"
+         x="191.76346"
+         y="54.896187">1000</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker4853)"
+       d="m 199.97537,167.44908 39,-39"
+       id="path4231-0"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.44749737px;line-height:125%;font-family:'TeX Gyre Termes Math';-inkscape-font-specification:'TeX Gyre Termes Math';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="67.049217"
+       y="255.19948"
+       id="text4144-2-4-3"
+       sodipodi:linespacing="125%"
+       transform="matrix(0.73602422,-0.6769552,0.6769552,0.73602422,0,0)"
+       inkscape:transform-center-x="0.94726664"
+       inkscape:transform-center-y="-4.7781939"><tspan
+         sodipodi:role="line"
+         id="tspan4146-9-3-3"
+         x="67.049217"
+         y="255.19948">210</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.70461893;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:0.70461893,1.40923786;stroke-dashoffset:0"
+       d="m 199.97532,221.62523 0.12636,39.62738"
+       id="path4142-0-2"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.44749737px;line-height:125%;font-family:'TeX Gyre Termes Math';-inkscape-font-specification:'TeX Gyre Termes Math';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="229.20496"
+       y="-208.15834"
+       id="text4144-9-6-6"
+       sodipodi:linespacing="125%"
+       transform="matrix(-0.02002502,0.99979948,-0.99979948,-0.02002502,0,0)"
+       inkscape:transform-center-x="-4.0838516"
+       inkscape:transform-center-y="2.6465144"><tspan
+         sodipodi:role="line"
+         id="tspan4146-3-8-5"
+         x="229.20496"
+         y="-208.15834">140</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.16681612;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.16681613, 0.33363225;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 200.3335,221.54327 c 3.03673,19.27973 1.96927,30.35109 0,39.61883"
+       id="path4166-5-0-2"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+  </g>
+</svg>
